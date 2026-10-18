@@ -1,0 +1,11 @@
+/build/
+/artifact/
+/dist/
+/stage/
+/node_modules/
+*.wgt
+*.nexe
+*.p12
+*.pem
+.env*
+__pycache__/

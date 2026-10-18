@@ -1,0 +1,114 @@
+{
+  "capturedAt": "2026-10-18T21:12:29.436Z",
+  "tests": [
+    {
+      "name": "native-arithmetic",
+      "passed": true,
+      "actual": "RESULT: 42"
+    },
+    {
+      "name": "bigint",
+      "passed": true,
+      "roundTripMs": 1026,
+      "message": "RESULT: {\"bigint\":\"18446744073709551616\"}"
+    },
+    {
+      "name": "optional-chaining",
+      "passed": true,
+      "roundTripMs": 1029,
+      "message": "RESULT: {\"optional\":42}"
+    },
+    {
+      "name": "unicode",
+      "passed": true,
+      "roundTripMs": 1017,
+      "message": "RESULT: {\"unicode\":\"İstanbul\"}"
+    },
+    {
+      "name": "array-closure",
+      "passed": true,
+      "roundTripMs": 1016,
+      "message": "RESULT: {\"array\":[1,4,9],\"closure\":42}"
+    },
+    {
+      "name": "regexp",
+      "passed": true,
+      "roundTripMs": 1017,
+      "message": "RESULT: {\"regexp\":true}"
+    },
+    {
+      "name": "json",
+      "passed": true,
+      "roundTripMs": 1031,
+      "message": "RESULT: {\"json\":42}"
+    },
+    {
+      "name": "typed-array",
+      "passed": true,
+      "roundTripMs": 1027,
+      "message": "RESULT: {\"typed\":[1,2,255]}"
+    },
+    {
+      "name": "math-baseline",
+      "passed": true,
+      "roundTripMs": 1022,
+      "message": "RESULT: {\"math\":[12,0,1]}"
+    },
+    {
+      "name": "utc",
+      "passed": true,
+      "roundTripMs": 1039,
+      "message": "RESULT: {\"utc\":1577836800000}"
+    },
+    {
+      "name": "runtime-exception",
+      "passed": true,
+      "roundTripMs": 1026,
+      "message": "ERROR: Error: probe-controlled-error"
+    },
+    {
+      "name": "syntax-exception",
+      "passed": true,
+      "roundTripMs": 1032,
+      "message": "ERROR: SyntaxError: Unexpected token '='"
+    },
+    {
+      "name": "recovery-math-memory",
+      "passed": true,
+      "roundTripMs": 1040,
+      "message": "RESULT: {\"recovery\":42,\"math\":true,\"memory\":49995000,\"map\":42,\"set\":2}"
+    },
+    {
+      "name": "fresh-isolate",
+      "passed": true,
+      "roundTripMs": 1020,
+      "message": "RESULT: {\"value\":42,\"clean\":\"undefined\"}"
+    }
+  ],
+  "passed": true,
+  "initial": {
+    "title": "V8 TV Deneyi",
+    "log": [
+      "STAGE: initialize V8",
+      "STAGE: flags set",
+      "STAGE: platform created",
+      "STAGE: platform initialized",
+      "VERSION: 15.8.18",
+      "STAGE: allocator created",
+      "STAGE: creating isolate",
+      "STAGE: isolate created",
+      "STAGE: creating context",
+      "STAGE: context created",
+      "STAGE: creating source string",
+      "STAGE: compiling script",
+      "STAGE: running script",
+      "STAGE: script returned",
+      "RESULT: 42"
+    ],
+    "result": 42,
+    "status": "RESULT: 42",
+    "elapsed": 1159,
+    "userAgent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 3.0) AppleWebKit/538.1 (KHTML, like Gecko) Version/3.0 TV Safari/538.1"
+  },
+  "skipped": []
+}

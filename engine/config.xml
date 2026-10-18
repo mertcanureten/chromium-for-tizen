@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://tvos-tizen.local/cpp20-probe" version="1.1.0" viewmodes="maximized">
+<tizen:application id="Cpp20TVXXX.Main" package="Cpp20TVXXX" required_version="3.0"/>
+<content src="index.html"/><name>V8Probe</name>
+<tizen:profile name="tv-samsung"/>
+<tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>

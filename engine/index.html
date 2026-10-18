@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>V8 TV Probe</title>
+<style>body{margin:70px;background:#101728;color:#f1f5f9;font:30px Arial}h1{font-size:44px}pre{white-space:pre-wrap;font-size:24px;color:#a5d8ff}embed{width:1px;height:1px}</style>
+<h1>V8 · On-device JavaScript probe</h1><p id="status">Loading native engine…</p><pre id="details"></pre><div id="module-box"></div>
+<script>
+window.v8ProbeLog=[];window.v8ProbeResult=null;window.v8ProbeStarted=Date.now();
+var box=document.getElementById('module-box'),mod=document.createElement('embed');
+window.runV8Probe=function(source){mod.postMessage(source);};
+box.addEventListener('load',function(){window.runV8Probe('JSON.stringify({engine:"native-v8",arithmetic:6*7,bigint:(2n**64n).toString(),optional:({a:{b:42}})?.a?.b,unicode:"İstanbul",array:[1,2,3].map(x=>x*x),regexp:/a+/u.test("aaa"),json:JSON.parse(\'{"value":42}\').value,typed:Array.from(new Uint8Array([1,2,255])),math:[Math.sqrt(144),Math.sin(0),Math.exp(0)],utc:Date.UTC(2020,0,1),closure:((x)=>()=>x+1)(41)()})');},true);
+box.addEventListener('message',function(e){var s=String(e.data);window.v8ProbeLog.push(s);document.getElementById('details').textContent=window.v8ProbeLog.join('\n');document.getElementById('status').textContent=s;if(s.indexOf('RESULT: ')===0){try{window.v8ProbeResult=JSON.parse(s.slice(8));}catch(x){window.v8ProbeResult={value:s.slice(8)};}}},true);
+['error','crash'].forEach(function(t){box.addEventListener(t,function(){document.getElementById('status').textContent='Native module: '+t;window.v8ProbeResult={error:t};},true);});
+mod.type='application/x-nacl';mod.src='probe.nmf';box.appendChild(mod);
+document.addEventListener('keydown',function(e){if(e.keyCode===10009)tizen.application.getCurrentApplication().exit();});
+</script></html>

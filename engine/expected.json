@@ -1,0 +1,26 @@
+{
+  "engine": "native-v8",
+  "arithmetic": 42,
+  "bigint": "18446744073709551616",
+  "optional": 42,
+  "unicode": "İstanbul",
+  "array": [
+    1,
+    4,
+    9
+  ],
+  "regexp": true,
+  "json": 42,
+  "typed": [
+    1,
+    2,
+    255
+  ],
+  "math": [
+    12,
+    0,
+    1
+  ],
+  "utc": 1577836800000,
+  "closure": 42
+}

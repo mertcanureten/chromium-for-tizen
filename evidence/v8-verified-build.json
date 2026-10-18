@@ -1,0 +1,15 @@
+{
+  "v8Version": "15.8.18",
+  "v8Revision": "94bfc15fbee9b05276068d92bf585ab961c80fd1",
+  "device": "Samsung UE49MU7400",
+  "os": "Tizen 3.0",
+  "architecture": "ARMv7 NaCl, V8 ARM simulator on device, jitless",
+  "nexeSha256": "f1cf17f77d2daf4379bca07a5943032306eb3b33caf90c51acea9f0864a34528",
+  "wgtSha256": "dbdb1345448da5801f2243ecc8c3a3bc5ff6bc6cf301f8ec38b889b6537b9df4",
+  "featureTests": 14,
+  "featureTestsPassed": 14,
+  "combinedTests": 5,
+  "combinedTestsPassed": 5,
+  "fullChromium": false,
+  "serverDataPreserved": true
+}

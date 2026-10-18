@@ -1,0 +1,110 @@
+{
+  "capturedAt": "2026-10-18T21:13:21.140Z",
+  "tests": [
+    {
+      "name": "modern-language-baseline",
+      "passed": true,
+      "mismatches": [],
+      "actual": {
+        "engine": "native-v8",
+        "arithmetic": 42,
+        "bigint": "18446744073709551616",
+        "optional": 42,
+        "unicode": "İstanbul",
+        "array": [
+          1,
+          4,
+          9
+        ],
+        "regexp": true,
+        "json": 42,
+        "typed": [
+          1,
+          2,
+          255
+        ],
+        "math": [
+          12,
+          0,
+          1
+        ],
+        "utc": 1577836800000,
+        "closure": 42
+      }
+    },
+    {
+      "name": "runtime-exception",
+      "passed": true,
+      "roundTripMs": 1030,
+      "message": "ERROR: Error: probe-controlled-error"
+    },
+    {
+      "name": "syntax-exception",
+      "passed": true,
+      "roundTripMs": 1026,
+      "message": "ERROR: SyntaxError: Unexpected token '='"
+    },
+    {
+      "name": "recovery-math-memory",
+      "passed": true,
+      "roundTripMs": 1025,
+      "message": "RESULT: {\"recovery\":42,\"math\":true,\"memory\":49995000,\"map\":42,\"set\":2}"
+    },
+    {
+      "name": "fresh-isolate",
+      "passed": true,
+      "roundTripMs": 1023,
+      "message": "RESULT: {\"value\":42,\"clean\":\"undefined\"}"
+    }
+  ],
+  "passed": true,
+  "initial": {
+    "title": "V8 TV Deneyi",
+    "log": [
+      "STAGE: initialize V8",
+      "STAGE: flags set",
+      "STAGE: platform created",
+      "STAGE: platform initialized",
+      "VERSION: 15.8.18",
+      "STAGE: allocator created",
+      "STAGE: creating isolate",
+      "STAGE: isolate created",
+      "STAGE: creating context",
+      "STAGE: context created",
+      "STAGE: creating source string",
+      "STAGE: compiling script",
+      "STAGE: running script",
+      "STAGE: script returned",
+      "RESULT: {\"engine\":\"native-v8\",\"arithmetic\":42,\"bigint\":\"18446744073709551616\",\"optional\":42,\"unicode\":\"İstanbul\",\"array\":[1,4,9],\"regexp\":true,\"json\":42,\"typed\":[1,2,255],\"math\":[12,0,1],\"utc\":1577836800000,\"closure\":42}"
+    ],
+    "result": {
+      "engine": "native-v8",
+      "arithmetic": 42,
+      "bigint": "18446744073709551616",
+      "optional": 42,
+      "unicode": "İstanbul",
+      "array": [
+        1,
+        4,
+        9
+      ],
+      "regexp": true,
+      "json": 42,
+      "typed": [
+        1,
+        2,
+        255
+      ],
+      "math": [
+        12,
+        0,
+        1
+      ],
+      "utc": 1577836800000,
+      "closure": 42
+    },
+    "status": "RESULT: {\"engine\":\"native-v8\",\"arithmetic\":42,\"bigint\":\"18446744073709551616\",\"optional\":42,\"unicode\":\"İstanbul\",\"array\":[1,4,9],\"regexp\":true,\"json\":42,\"typed\":[1,2,255],\"math\":[12,0,1],\"utc\":1577836800000,\"closure\":42}",
+    "elapsed": 1228,
+    "userAgent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 3.0) AppleWebKit/538.1 (KHTML, like Gecko) Version/3.0 TV Safari/538.1"
+  }
+}

@@ -1,0 +1,14 @@
+This experiment uses and adapts interfaces from V8, Chromium and Native Client.
+Upstream copyright and license notices remain applicable to upstream code and
+any excerpts. The source fetcher retrieves those projects with their notices;
+the linker helper copies available dependency notices alongside the private
+build output. No Samsung SDK redistribution rights are granted by this repo.
+
+V8 source: https://chromium.googlesource.com/v8/v8/
+V8 license: https://chromium.googlesource.com/v8/v8/+/refs/heads/main/LICENSE
+Native Client: https://chromium.googlesource.com/native_client/src/native_client/
+Chromium: https://chromium.googlesource.com/chromium/src/
+
+No project-wide license is asserted for newly authored integration scripts in
+this initial research publication. Public visibility alone does not change
+upstream or third-party licensing terms.
